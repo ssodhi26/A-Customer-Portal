@@ -1,0 +1,31 @@
+<p>
+<div class="container">
+    <br>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">Customer Portal</a>
+        </div>
+    </div>
+</nav>
+<br>
+<button class="btn btn-primary pull-right" (click)="onAddCustomer()">Add Customer</button>
+<p>
+<br>
+<br>
+<br>
+<br>
+<div class="flex-container">
+    <div class="card" *ngFor="let customer of cust">
+      <div class="card-header">{{customer.name}}</div>
+      <div class="card-body">{{customer.address}}</div> 
+      <br>
+      <br>
+      <a (click)="edit(customer.name)">Edit</a> | <a routerLink="/customer-view/{{customer.name}}">View</a>
+      <p>
+    </div>
+  </div>
+</div>
+<br>
+<!--(click)="edit(customer.name)" routerLink=/edit/{{customer.name}}  -->
+

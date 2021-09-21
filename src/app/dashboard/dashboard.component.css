@@ -1,0 +1,53 @@
+.navbar
+{
+    background-color: #1b70f7;
+}
+.btn
+{
+    background-color: #1b70f7;
+    font-size: 20px;
+}
+
+.navbar-brand
+{
+    color:white;
+    font-size: 35px;
+}
+
+.container
+{
+    background-color: #e0e0e0;
+}
+
+  .flex-container {
+    padding: 0;
+    margin: auto;
+    max-width: 1000px;
+    
+  
+    /* flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+  .card{
+    flex: 25%;
+    justify-content: space-between;
+    margin:25px;
+    flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    font-size: 20px;
+  }
+  
+  .card-header
+  {
+    background-color: #1b70f7;
+    color:white;
+    font-size: 20px;
+  }

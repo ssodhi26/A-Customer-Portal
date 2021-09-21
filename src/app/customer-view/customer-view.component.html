@@ -1,0 +1,57 @@
+<p>
+    <div class="container">
+        <br>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Customer Portal</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <div class="flex-container">
+        <div class="card">
+          <div class="card-header"><b>View Customer</b></div>
+          <hr style="height:1px;background-color:gray">
+          <div class="card-body">
+              <form>
+                    <div class="form-group row">
+                      <label for="name" class="col-sm-2 col-form-label">Full Name</label>
+                      <div class="col-sm-10">{{user.name}}</div>
+                    </div>
+                    <hr style="height:1px;background-color:gray">
+
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label">Email Address</label>
+                        <div class="col-sm-10">{{user.email}}</div>
+                    </div>
+                    <hr style="background-color:gray">
+
+                    <div class="form-group row">
+                        <label for="phn" class="col-sm-2 col-form-label">Contact No.</label>
+                        <div class="col-sm-10">{{user.phone}}</div>
+                    </div>
+                    <hr style="height:1px;background-color:gray">
+
+                    <div class="form-group row">
+                        <label for="adrs" class="col-sm-2 col-form-label">Address</label>
+                        <div class="col-sm-10">{{user.address}}</div>
+                    </div>
+                    <hr style="height:1px;background-color:gray">
+
+                    <div class="form-group row">
+                        <label for="desc" class="col-sm-2 col-form-label">Description</label>
+                        <div class="col-sm-10">{{user.description}}</div>
+                    </div>
+                    <br>
+              </form>
+          </div> 
+          <br>
+          <br>
+          <button class="btn btn-primary" (click)="onDashboardClick()">Back to Dashboard</button>
+          <p>
+        </div>
+      </div>
+    </div>
+    <br>
